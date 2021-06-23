@@ -1,6 +1,10 @@
 body {
     margin: auto;
     text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+   
   }
    body *{
     font-family: 'Josefin Sans', sans-serif;
@@ -42,9 +46,11 @@ h3{
     margin-top: 5px;
 }
 .img-top{
-    height: 11em;
-    width: 17em;
+    height: 100%;
+    width: 100%;
     padding: auto;
     margin: auto;
     -ms-flex-align: center;
+
 }
+ 
