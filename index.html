@@ -24,17 +24,17 @@
     <header >
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top pt-2">
                 <div class="container-fluid" style="background-color: transparent">
-                    <a class="navbar-brand p-auto " href="#"><img class="icononav" src="assets/img/viajes.svg"
+                    <a class="navbar-brand p-auto" href="#" style="margin-left: 10px;"><img class="icononav" src="assets/img/viajes.svg"
                             alt="icono navbar">Viajes Chile</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
+                        aria-label="Toggle navigation" style="margin-right: 10px;">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
                     <div class="collapse navbar-collapse justify-content-end" style="padding-left: 20px;"
                         id="navbarNavAltMarkup">
-                        <div class="navbar-nav mr-auto">
+                        <div class="navbar-nav mr-auto" style="margin-right: 10px;">
                             <a class="nav-link active" href="#">Inicio</a>
                             <a class="nav-link" href="#">Quienes somos</a>
                             <a class="nav-link" href="#">Destacados</a>
@@ -144,7 +144,7 @@
                     <img src="assets/img/card1.jpg" class="img-top" alt="card1">
                     <div class="card-body">
                         <h5 style="font-weight: normal;">Lorem ipsum dolor sit amet consectetur</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        <p class="card-text collapse">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
                     </div>
                 </div>
@@ -155,7 +155,7 @@
                     <img src="assets/img/card2.jpg" class="img-top" alt="card2">
                     <div class="card-body">
                         <h5 style="font-weight: normal;">Lorem ipsum dolor sit amet consectetur</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        <p class="card-text collapse">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
                     </div>
                 </div>
@@ -166,8 +166,8 @@
                     style="width: 18rem; border-color: #0D0D0D; background-color:#27C3DB; ">
                     <img src="assets/img/card3.jpg" class="img-top" alt="card3">
                     <div class="card-body">
-                        <h5 style="font-weight: normal;">Lorem ipsum dolor sit amet consectetur</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        <h5 class="card-title" style="font-weight: normal;">Lorem ipsum dolor sit amet consectetur</h5>
+                        <p class="card-text collapse">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
                     </div>
                 </div>
@@ -176,7 +176,7 @@
                 <img src="assets/img/card4.jpg" class="img-top" alt="card4">
                 <div class="card-body">
                     <h5 style="font-weight: normal;">Lorem ipsum dolor sit amet consectetur</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                    <p class="card-text collapse">Some quick example text to build on the card title and make up the bulk of
                         the card's content.</p>
                 </div>
             </div>
@@ -195,26 +195,42 @@
         <hr class="hrnew col">
     </div>
    <!--form-->
-    <div class="row">
+    <div class="row mt-4">
         <div class="d-flex justify-content-center ">
    <form id="form-contacto" >
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          <label for="exampleInputEmail1" class="form-label" style="color: white;">Introduce tu nombre</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="background-color: transparent; border-color: #27C3DB;">
+         
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
+          <label for="exampleInputPassword1" class="form-label" style="color: white;">Introduce tu correo</label>
+          <input type="password" class="form-control " id="exampleInputPassword1" style="background-color: transparent; border-color: #27C3DB;">
         </div>
         <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Te contactaremos</label>
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" >
+          <label class="form-check-label" for="exampleCheck1" style="color: white;">¿Aceptas recibir mail de respuesta?</label>
         </div>
-        <button type="button" class="btn btn-primary" onclick="getFormContacto(this.form)" style="background-color:#27C3DB; border-color: white;">Enviar</button>
+        <button type="button" class="btn btn-primary" onclick="getFormContacto(this.form)" style="color: white; border-color: white; background-color:#27C3DB ;"
+                        data-bs-toggle="tooltip" data-bs-placement="bottom" title="Haz click aquí para enviar">
+                        Enviar
+                    </button>
       </form>
     </div>
+<!--Footer-->
+<footer class="p-auto mt-3" style="background-color: #27C3DB; color: white;">
+<h4 style="text-align: start; margin-left: 30px;">Viajes Chile</h4>
+<div class="iconos d-inline mt-auto my-auto align-content-end" style="color: white;">
+    <i class="fab fa-github"></i>
+    <i class="fab fa-invision"></i>
+    <i class="fab fa-twitter-square"></i>
+    <i class="fab fa-facebook-square"></i>
 </div>
+
+</footer>
+
+</div>
+
       <!--Jquery y Javascript-->
     
     <script src="https://code.jquery.com/jquery-3.6.0.js"
