@@ -54,6 +54,9 @@ h3{
 
 }
 .iconos{
-    height: 10px;
-align-content: flex-end;
+align-content:flex-end;
+float: right;
+color: white;
+margin: 10px;
+
 }

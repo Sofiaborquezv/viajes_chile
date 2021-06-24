@@ -5,6 +5,6 @@ $(function () {
     $('[data-bs-toggle="tooltip"]').tooltip()
 });
 
-  $(".img-top").click(function(){
+  $(".card-title").click(function(){
     $(".card-text").toggle();
 });
